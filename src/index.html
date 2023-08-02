@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="utf-8">
+    <title>Mocha Tests</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/6.2.0/mocha.min.css">
+    <style>
+        #mocha h1 {
+          font-size: 1.5rem;
+        }
+    
+        #mocha h2 {
+          font-size: 1rem;
+        }
+    
+        #mocha-stats,
+        #mocha .test pre {
+          font-size: 1rem;
+        }
+    
+        #page-title {
+          font-size: 2rem !important;
+        }
+    
+        body,
+        #mocha {
+          font-family: monospace;
+        }
+    
+        .test.pass::before,
+        .test.fail::before,
+        .test.pending::before {
+          font-size: 18px !important;
+        }
+      </style>
+</head>
+<body>
+    <div id="mocha">
+        <h1>Mocha/Chai</h1>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/6.2.0/mocha.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.2.0/chai.js" defer></script>
+    <script>
+        var expect = chai.expect;
+        mocha.setup('bdd');
+    </script>
+    <script src="sum.js" defer></script>
+    <script src="../test/test.js" defer></script>
+    <script>
+        mocha.run();
+    </script>
+</body>
+</html>
