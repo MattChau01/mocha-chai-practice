@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <title>Mocha Tests</title>
-    <!-- <link href="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.css" rel="stylesheet"/> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/6.2.0/mocha.min.css">
     <style>
         #mocha h1 {
@@ -39,30 +38,16 @@
     <div id="mocha">
         <h1>Mocha/Chai</h1>
     </div>
-    <!-- <script src="testSetup.js" defer></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/6.2.0/mocha.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.2.0/chai.js" defer></script>
     <script>
-        /* exported expect */
         var expect = chai.expect;
         mocha.setup('bdd');
     </script>
+    <script src="sum.js" defer></script>
+    <script src="../test/test.js" defer></script>
     <script>
         mocha.run();
     </script>
-    <!-- <script src="https://cdn.rawgit.com/Automattic/expect.js/0.3.1/index.js" defer></script>
-    <script src="https://cdn.rawgit.com/chaijs/chai/3.5.0/chai.js" defer></script>
-    <script src="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.js" defer></script> -->
-
-    <!-- <script src="problems.js" defer></script>
-    <script>
-        const mocha = window.mocha;
-        mocha.setup('bdd');
-    </script> -->
-    <!-- <script src="tests.js" defer></script> -->
-    <!-- <script>
-        mocha.checkLeaks();
-        mocha.run();
-    </script> -->
 </body>
 </html>
