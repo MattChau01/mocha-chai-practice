@@ -32,7 +32,20 @@ describe('multiply(a, b)', () => {
     //     if (typeof a !== 'number' || typeof b !== 'number') {
     //         expect(result).to.equal(undefined)
     //     }
+    // })
 
+    // it('if a values are both numbers, expect the result to equal 55', () => {
+    //     let a:number;
+    //     a=5;
+    //     let b:number;
+    //     b=11;
+
+    //     const result = multiply(a,b);
+    //     if (typeof a !== 'number' || typeof b !== 'number') {
+    //         expect(result).to.equal(undefined)
+    //     } else {
+    //         expect(result).to.deep.equal(55);
+    //     }
     // })
 
 })
