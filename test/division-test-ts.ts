@@ -16,6 +16,11 @@ describe('divide(a, b)', () => {
         expect(result).to.equal(10);
     })
 
+    it('returns a result of -25', () => {
+        const result = divide(625,(-25));
+        expect(result).to.deep.equal(-25);
+    })
+
     it('returns NaN', () => {
         const result = divide(50,'apple');
         expect(result).to.equal(NaN);
