@@ -13,7 +13,15 @@ export function divide(a:any, b:any) {
 
     // if (typeof a != Number )
 
-    if (typeof a !== 'number' || typeof b !== 'number') {
+    // if (typeof a !== 'number' || typeof b !== 'number') {
+    //     return NaN;
+    // }
+
+    if (typeof a === 'number' && typeof b === 'number') {
+        return (a/b);
+    } else if (a === null || b === null) {
+        return null;
+    } else if (typeof a !== 'number' || typeof b !== 'number') {
         return NaN;
     }
 

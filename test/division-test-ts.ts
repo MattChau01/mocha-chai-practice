@@ -23,12 +23,17 @@ describe('divide(a, b)', () => {
 
     it('returns NaN', () => {
         const result = divide(50,'apple');
-        expect(result).to.equal(NaN);
+        expect(result).to.deep.equal(NaN);
     })
 
     it('returns null', () => {
         const result = divide(50, null);
-        expect(result).to.equal(null);
+        expect(result).to.deep.equal(null);
+    })
+
+    it('returns null', () => {
+        const result = divide(null, 100);
+        expect(result).to.deep.equal(null);
     })
 
 })
