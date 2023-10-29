@@ -12,4 +12,4 @@ export function multiply(a:any, b:any) {
     } else {
         return a*b;
     }
-} 
+};
