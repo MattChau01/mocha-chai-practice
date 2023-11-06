@@ -23,4 +23,19 @@ describe('subtraction(a, b)', () => {
     //     expect(result).to.equal(0)
     // })
 
+    it('should equal 80', () => {
+        const result = subtraction(130, 50);
+        expect(result).to.deep.equal(80);
+    })
+
+    it('should equal NaN', () => {
+        const result = subtraction(130, 'apple');
+        expect(result).to.deep.equal(NaN);
+    })
+
+    it('return `negative`', () => {
+        const result = subtraction(6, 8);
+        expect(result).to.deep.equal('negative');
+    })
+
 })
